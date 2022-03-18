@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+#Issues when creating React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- fixing the registry
+  https://stackoverflow.com/questions/25826839/node-npm-install-failure-due-to-proxy-config-what-now
+  npm config set registry "http://registry.npmjs.org/"
 
-## Available Scripts
+- fixing the socket timeout
+  npm cache clear -f
 
-In the project directory, you can run:
+#Questions for Jonny
 
-### `npm start`
+- I had to set a registry for npm - what is that
+- I saw something about my proxy - what is that? Is that something I need or can set?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Common Commands
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Success! Created beta-read at C:\Users\postupackl1\Documents\beta-read\beta-read
+Inside that directory, you can run several commands:
 
-### `npm test`
+npm start
+Starts the development server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm run build
+Bundles the app into static files for production.
 
-### `npm run build`
+npm test
+Starts the test runner.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run eject
+Removes this tool and copies build dependencies, configuration files
+and scripts into the app directory. If you do this, you can’t go back!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We suggest that you begin by typing:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd beta-read
+npm start
 
-### `npm run eject`
+#Things I learned along the way
+OMG okay so npm create-react-app beta-read gives you the file structure!
+Go into the second beta-read and then do
+'npm start'
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+it will tell you the localhost it launched on!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+render has two arguments - the javascript element and the container
