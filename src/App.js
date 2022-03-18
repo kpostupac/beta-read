@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+//this is a functional component
 function App() {
   return (
+    //these classnames are defined in App.css
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

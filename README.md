@@ -44,3 +44,13 @@ To stop the React when launched, terminate the batch job in the cmd window.
 render has two arguments - the javascript element and the container
 Javascript has attributes and expressions, but I'm not sure what the difference is.
 Expressions are compiled into objects?
+
+only call ReactDOM.render monospace
+
+Two kinds of components Functional (which are functions lol) and Class
+
+- functional components begin with a Capital Letter - lowercase letters are just regular HTML elements.
+  - To render that functional component, create a corresponding JSX element (which looks like a new HTML tag)
+  - Props are passed in with arguments
+- class components are for heavier interactions, like forms.
+  - Props are passed in with this.props.<whatever>
