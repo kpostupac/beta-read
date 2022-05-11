@@ -22,6 +22,7 @@ class Author extends React.Component {
       <div>
         <p>{this.state.name}</p>
         <p>Her age is {this.props.age}</p>
+        <p>She is a {this.props.profession}</p>
       </div>
     );
   }

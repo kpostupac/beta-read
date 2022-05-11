@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Author age="25" />
+    <Author age="25" profession="beta reader" />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -54,3 +54,16 @@ Two kinds of components Functional (which are functions lol) and Class
   - Props are passed in with arguments
 - class components are for heavier interactions, like forms.
   - Props are passed in with this.props.<whatever>
+
+Hooks allow for state (which is usually a class component specific thing) to be used in functional components.
+You use setState() in functional components. You CANNOT use it in class components.
+
+Lifestyle methods
+
+- componentDidUpdate - did the component update
+- componentDidMount - is the component on the page
+- componentWillUnmount - is the component off the page
+- useEffect - combines all three
+  These functions check the life of the DOM.
+
+# Events:
