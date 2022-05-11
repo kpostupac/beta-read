@@ -67,3 +67,5 @@ Lifestyle methods
   These functions check the life of the DOM.
 
 # Events:
+
+hello
