@@ -7,12 +7,9 @@ import AddAuthorForm from "./AddAuthorForm";
 import AuthorList from "./AuthorList";
 import reportWebVitals from "./reportWebVitals";
 
-const contacts = ["Karen Postupac", "Sarah Postupac", "Cody Postupac"];
-
 ReactDOM.render(
   <React.StrictMode>
-    <AddAuthorForm />
-    <AuthorList data={contacts} />
+    <App data={[]} />
   </React.StrictMode>,
   document.getElementById("root")
 );

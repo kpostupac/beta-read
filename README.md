@@ -83,3 +83,7 @@ return <ul>listItems</ul>;
 }
 
 the question is - where does this all go?
+
+# Spread operator ...
+
+"allows an iterable such as an array expression or string to be expanded in places"

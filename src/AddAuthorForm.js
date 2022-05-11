@@ -1,14 +1,17 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 
-function AddAuthorForm() {
+function AddAuthorForm(props) {
   //this initializes the new author object
-  const [author, setAuthor] = useState("");
+  const [name, setName] = useState("");
   function handleChange(e) {
-    setAuthor(e.target.value);
+    setName(e.target.value);
   }
   //what does preventDefault do?
   function handleSubmit(e) {
+    props.handleSubmit(name);
+    //something is wrong with this line
+    setName("");
     e.preventDefault();
   }
   return (
@@ -17,7 +20,7 @@ function AddAuthorForm() {
         type="text"
         placeholder="Add new author"
         onChange={handleChange}
-        value={author}
+        value={name}
       />
       <button type="submit">Add author</button>
     </form>
