@@ -71,19 +71,6 @@ Lifestyle methods
 - onChange for changes on the text fields (this calls handleChange)
 - onSubmit for submits to a form (this calls handleSubmit, etc.)
 
-# Lists:
-
-arr = [1,2,3]
-
-<MyList data={arr} />
-function MyList(props){
-const arr = props.data;
-const listItems = arr.map((var) => <li>{val}</li>);
-return <ul>listItems</ul>;
-}
-
-the question is - where does this all go?
-
 # Spread operator ...
 
 "allows an iterable such as an array expression or string to be expanded in places"
