@@ -3,11 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Author from "./Author";
+import AddAuthorForm from "./AddAuthorForm";
+import AuthorList from "./AuthorList";
 import reportWebVitals from "./reportWebVitals";
+
+const contacts = ["Karen Postupac", "Sarah Postupac", "Cody Postupac"];
 
 ReactDOM.render(
   <React.StrictMode>
-    <Author age="25" profession="beta reader" />
+    <AddAuthorForm />
+    <AuthorList data={contacts} />
   </React.StrictMode>,
   document.getElementById("root")
 );
